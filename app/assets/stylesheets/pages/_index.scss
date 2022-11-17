@@ -1,2 +1,86 @@
-// Import page-specific CSS files here.
 @import "home";
+
+
+body {
+  background: #fff;
+}
+
+.container {
+  color: #333;
+  width: 80%;
+  margin: 35px auto;
+  padding: 35px;
+}
+
+.white {
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(50,50,50,.2);
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1508778552286-12d4c6007799?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  height: 450px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero-full {
+  height: 100vh;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.movie {
+  border: 1px solid rgb(236, 236, 236);
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(50,50,50,.2);
+  padding: 15px 20px;
+  margin: 15px 0px;
+
+  p {
+    margin-bottom: .7em;
+  }
+}
+
+.movie-overview {
+  padding: 50px 10px;
+  text-align: center;
+
+  .movie-link {
+    color: #333;
+    text-decoration: none;
+    margin: 20px 0px;
+    text-transform: capitalize;
+  }
+}
+
+.btn-danger {
+  color: #fff;
+
+  &hover {
+    color: #fff !important;
+  }
+}

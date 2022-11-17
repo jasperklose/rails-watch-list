@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Movies</h1>
+  <% @movies.each do |movie| %>
+    <ul>
+      <li>Movie: <%= movie.title %>, Rating: <%= movie.rating %></li>
+    </ul>
+  <% end %>
+</div>
+

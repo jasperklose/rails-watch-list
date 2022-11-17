@@ -1,0 +1,13 @@
+<div class="hero hero-full">
+  <div class="container white">
+    <h2>Add a new movie to <%= @list.name %></h2>
+    <br>
+      <%= simple_form_for [@list, @bookmark] do |f| %>
+        <%= f.input :comment, placeholder: 'Enter comment' %>
+        <%= f.association :movie, prompt: 'Select a movie', input_html: { class: 'select2' } %>
+        <br>
+        <%= f.submit class: 'btn btn-primary' %>
+        <%= link_to '← Go back', lists_path(), class: "btn link" %>
+    <% end %>
+  </div>
+</div>

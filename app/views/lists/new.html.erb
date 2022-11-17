@@ -1,0 +1,12 @@
+<div class="hero hero-full">
+  <div class="container white">
+    <h2>Create a new list</h2>
+    <br>
+    <%= simple_form_for @list do |f| %>
+      <%= f.input :name %>
+      <br>
+      <%= f.submit class: 'btn btn-primary' %>
+      <%= link_to '← Go back', lists_path, class: "btn link" %>
+    <% end %>
+  </div>
+</div>
