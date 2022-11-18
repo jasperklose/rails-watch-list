@@ -3,7 +3,7 @@
     <h2>Add a new movie to <%= @list.name %></h2>
     <br>
       <%= simple_form_for [@list, @bookmark] do |f| %>
-        <%= f.input :comment, placeholder: 'Enter comment' %>
+        <%= f.input :comment, placeholder: 'Enter comment (min. 6 characters)' %>
         <%= f.association :movie, prompt: 'Select a movie', input_html: { class: 'select2' } %>
         <br>
         <%= f.submit class: 'btn btn-primary' %>
