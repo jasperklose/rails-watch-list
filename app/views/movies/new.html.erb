@@ -1,0 +1,15 @@
+<div class="hero hero-full">
+  <div class="container white">
+    <h2>Create a new movie</h2>
+    <br>
+    <%= simple_form_for @movie do |f| %>
+      <%= f.input :title %>
+      <%= f.input :overview %>
+      <%= f.input :poster_url %>
+      <%= f.input :rating, collection: ["10", "9", "8", "7", "6", "5", "4", "3", "2", "1"]%>
+      <br>
+      <%= f.submit class: 'btn btn-primary' %>
+      <%= link_to '← Go back', movies_path, class: "btn link" %>
+    <% end %>
+  </div>
+</div>

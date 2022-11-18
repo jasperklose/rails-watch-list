@@ -1,9 +1,17 @@
-<div class="container">
-  <h1>Movies</h1>
-  <br>
-  <% @movies.each do |movie| %>
+<div class="hero hero-full">
+  <div class="container white">
+    <h2>All movies</h2>
+    <br>
+    <% @movies.each do |movie| %>
     <ul>
-      <li>Movie: <%= movie.title %>, Rating: <%= movie.rating %></li>
+      <li>
+          <strong><%= movie.title %></strong> -
+          <%= movie.rating %> / 10
+        </li>
     </ul>
   <% end %>
+  <br>
+  <%= link_to 'Add new movie', new_movie_path, class: "btn btn-primary" %>
+  <%= link_to '← Go back', lists_path, class: "btn link" %>
+  </div>
 </div>

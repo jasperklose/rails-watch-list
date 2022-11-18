@@ -16,7 +16,7 @@
         <div class="col-4">
           <div class="movie">
             <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
-            <%= image_tag movie.poster_url, alt: "Le Wagon", class: "movie-poster" %>
+            <%= image_tag movie.poster_url, alt: "Movie Poster", class: "movie-poster" %>
             <h4><%= movie.title %></h4>
             <p><%= movie.overview %></p>
             <p><strong>Rating: </strong><%= movie.rating %> / 10</p>
