@@ -66,7 +66,7 @@ h4 {
 }
 
 .movie-overview {
-  padding: 50px 10px;
+  padding: 10px;
   text-align: center;
 
   .movie-link {
@@ -88,4 +88,11 @@ h4 {
 .movie-poster {
   width: 100%;
   margin-bottom: 15px;
+}
+
+.list-img img {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  margin-bottom: 25px;
 }
